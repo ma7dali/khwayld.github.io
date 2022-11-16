@@ -1,0 +1,521 @@
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+/* https://responsivenavigation.net/examples/clean-grid/ */
+.nav ul { list-style: none; padding: 0px; font-weight: bold; text-align: center; }
+.nav ul li { display: inline-block; }
+.nav ul li a { font-family: Menlo, monospace; display: block; padding: 10px 20px; text-decoration: none; color: rgb(255, 255, 255); }
+.nav ul li a:hover { background-color: rgb(218, 218, 218); color: rgb(37, 37, 37); border-radius: 5px;}
+
+
+.main-footer-container {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+}
+
+.footer-container {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+    list-style-type: none;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+  
+a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
+
+.main-contact-container {
+    height: 100%;
+    width: 100%;
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+    margin-bottom: 20vh;
+    padding: 40px;
+    max-width: 100px;
+}
+
+.contact-container h1 {
+    font-size: 60px;
+    color: #f3c245;
+    margin-bottom: 20px;
+    font-family: Menlo, monospace;
+}
+
+.contact-container span {
+    color: white;
+}
+
+.contact-container p {
+    font-size: 1rem;
+    font-family: Menlo, monospace;
+    color: white;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 3.8rem;
+}
+
+.contact-container form {
+    position: relative;
+}
+
+
+.contact-container form input, form textarea {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.contact-container textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-container form .submit-button {
+    display: inline-block;
+    color: #f3c245;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+
+.contact-container form .submit-button:hover {
+    transform: scale(1.03);
+    color: #daa625;
+    background: #1b1b1b;
+}
+
+.degree-container {
+    border-radius: 100px 20px;
+    position: relative;
+    text-align: center;
+    color: black;
+    background-color: rgb(30, 30, 30);
+    width: 70%;
+    margin: auto;
+    padding: 3rem;
+    background-clip: content-box;
+}
+
+
+.module-image {
+    padding: 16px;
+    max-width: 100px;
+    max-height: 100px;
+    height: 60%;
+    width: 60%;
+    border-radius: 80px;
+}
+
+
+.welcome-main-container {
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: 20%;
+    height: 65vh;
+}
+
+
+.main-picture-container {
+    display: flex;
+    margin: auto;
+}
+
+#main-image {
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
+    transition: 0.2s;
+}
+
+.welcome-container h1 {
+    margin: auto;
+    font-size: 35px;
+    color: white;
+    padding: 14px;
+    font-family: Menlo, monospace;
+}
+
+
+.welcome-container h2 {
+    margin: auto;
+    font-size: 35px;
+    color: white;
+    padding: 14px;
+    font-family: Menlo, monospace;
+}
+
+.welcome-container p {
+    margin: auto;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 12px;
+    font-family: Menlo, monospace;
+}
+
+.welcome-container span {
+    color: #f3c245
+}
+
+.about-me-container {
+    border-radius: 100px 20px;
+    position: relative;
+    text-align: center;
+    color: black;
+    background-color: rgb(30, 30, 30);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    background-clip: content-box;
+    height: auto;
+    max-height: 80vh;
+}
+
+
+.about-me-title {
+    position: relative;
+    color: #f3c245;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: Menlo, monospace;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.about-me-text {
+    color: white;
+    padding: 1rem;
+    font-family: Menlo, monospace;
+    font-size: 0.6rem;
+}
+
+
+.quiz-image {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    opacity: 100%;
+    z-index: 1;
+    height: auto; 
+    width: auto; 
+    max-width: 350px; 
+    max-height: 150px;
+    border-radius: 10%;
+    transition: 0.8s;
+}
+
+
+.quiz-image:hover {
+    opacity: 0%;
+}
+  
+
+.answer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Menlo, monospace;
+    font-size: 6px;
+}
+
+
+.question-title {
+    position: relative;
+    color: #f3c245;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: Menlo, monospace;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.question {
+    position: relative;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: Menlo, monospace;
+}  
+  
+  
+.module-container {
+    border-radius: 100px 20px;
+    position: relative;
+    text-align: center;
+    color: black;
+    background-color: rgb(30, 30, 30);
+    width: 70%;
+    margin: auto;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    background-clip: content-box;
+}
+
+.quiz-container {
+    border-radius: 100px 20px;
+    position: relative;
+    text-align: center;
+    color: black;
+    background-color: rgb(30, 30, 30);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+    background-clip: content-box;
+}
+  
+.paragraph-title {
+    position: relative;
+    color: #f3c245;
+    padding: 1rem;
+    font-family: Menlo, monospace;
+    font-weight: bold;
+    font-size: 1rem;
+}
+  
+.explanation {
+    color: white;
+    padding: 0.5rem;
+    font-family: Menlo, monospace;
+    font-size: 12px;
+}    
+
+.yellow-title {
+    text-align: center;
+    color: #f3c245;
+    padding: 1rem;
+    font-family: Menlo, monospace;
+}
+
+.white-title {
+    text-align:center;
+    color: white;
+    font-family: Menlo, monospace;
+    padding: 1rem;
+}
+
+.paragraph-style-1 {
+    color: white;
+    padding: 0rem 2rem 2rem 2rem;
+    font-family: Menlo, monospace;
+    font-size: 14px;
+    text-align: center;
+}
+
+.paragraph-style-2 {
+    color: white;
+    text-align: center;
+    font-family: Menlo, monospace;
+    padding: 1rem;
+}
+
+.paragraph-style-3 {
+    color: white;
+    text-align: center;
+    font-family: Menlo, monospace;
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0rem;
+}
+
+.title-design-1 {
+    text-align: center;
+    color: #f3c245;
+    font-family: Menlo, monospace;
+    padding: 1rem 1rem 0rem 1rem;
+    margin: 1rem 1rem 0rem 1rem;
+}
+
+.image-style-1 {
+    display: flex;
+    margin: auto;
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 150px;
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+.image-style-1:hover {
+    transform: scale(1.06);
+}
+
+
+@media (min-width: 500px) {
+
+    .main-footer-container {
+        height: 20vh;
+    }
+
+    .footer-container {
+        grid-auto-flow: column;
+    }   
+
+  
+    .paragraph-title {
+      font-size: 1.3rem;
+    }
+  
+    .module-container {
+      width: 80%;
+    }
+  
+    .explanation {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .main-contact-container {
+        max-width: 500px;
+        padding-left: 120px;
+        padding-top: 20px;
+    }    
+
+    .question-title {
+        font-size: 2rem;
+    }
+
+    .main-picture-container {
+        margin: 0px;
+    }
+
+    .contact-container h1 {
+        font-size: 80px;
+    }
+
+    .welcome-container h1 {
+        padding: 20px;
+        font-size: 2.6rem;
+    }
+    
+    
+    .welcome-container h2 {
+        padding: 20px;
+        font-size: 2.6rem;
+    }
+    
+    .welcome-container p {
+        padding: 20px;
+        font-size: 1.6rem;
+    }
+
+    .welcome-main-container {
+        max-width: 1300px;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;    
+        margin-right: auto;
+        padding: 0 120px;
+        margin-top: auto;
+        margin-top: auto;
+    }     
+
+    .about-me-container {
+        padding: 3rem;
+        height: 80vh;
+    }
+
+    .about-me-text {
+        font-size: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .answer {
+        font-size: 16px;
+    }
+
+    .image-style-1 {
+        max-width: 950px; 
+        max-height: 350px; 
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+@media (min-width: 750px) {
+    .sga-main-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+      
+      .degree-main-container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          padding: 20px;
+      }
+}
+
+@media (min-width: 1000px) {
+    #main-image {
+        height: auto; 
+        width: auto; 
+        max-width: 350px; 
+        max-height: 350px;
+        padding: 20px;
+        transition: 0.2s;
+    }
+    
+    .quiz-image {
+        max-width: 600px; 
+        max-height: 350px;
+    }
+
+    .main-contact-container {
+        max-width: 1050px;
+        padding-left: 120px;
+        padding-top: 20px;
+    }    
+
+}
+
+
+@media (max-width: 1100px) {
+    .main-contact-container {
+        grid-gap: 2rem;
+        transition: 0.3s;
+    }
+}
